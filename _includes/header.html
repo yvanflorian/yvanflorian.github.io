@@ -1,7 +1,7 @@
-<!-- <header class="site-header" 
+<header class="site-header" 
         style="background-image: url( {{ site.title-logo | relative_url }} );" 
-        role="banner">   -->
-<header class="site-header" role="banner">  
+        role="banner">  
+<!-- <header class="site-header" role="banner">   -->
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -9,9 +9,9 @@
     <a class="site-title" 
        rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}
     </a> -->
-       {%- if site.title-logo -%}
+       <!-- {%- if site.title-logo -%}Clear-Item
           <img src="{{ site.title-logo | relative_url }}" alt="{{ site.title | escape }}"/>
-       {%- endif -%}
+       {%- endif -%} -->
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}
     </a>
 
